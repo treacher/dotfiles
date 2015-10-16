@@ -1,0 +1,13 @@
+tap 'caskroom/cask'
+brew 'chruby'
+brew 'git'
+brew 'ruby-install'
+brew 'vim'
+brew 'wget'
+
+cask 'google-chrome'
+cask 'skype'
+cask 'iterm2'
+cask 'slack'
+cask '1password'
+cask 'atom'
