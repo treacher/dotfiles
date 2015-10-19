@@ -24,3 +24,7 @@ antigen apply
 # Initialize chruby
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
+
+# Federated login for AWS
+export AWS_CLI=/usr/local/bin/aws
+source $HOME/dev/saml-aws-functions/zsh-functions

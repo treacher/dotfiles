@@ -4,6 +4,6 @@
   email = m.w.treacher@gmail.com
   name = Michael Treacher
 [core]
-  excludesfile = /Users/treach3r/.gitignore
+  excludesfile = ~/.gitignore
 [push]
   default = simple
