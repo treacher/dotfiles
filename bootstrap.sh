@@ -9,6 +9,8 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 echo "Symlinking dotfiles"
 ln -s ~/.dotfiles/zshrc ~/.zshrc
+ln -s ~/.dotfiles/gitignore ~/.gitignore
 
 echo "Installing brew bundle"
 brew tap Homebrew/bundle
+brew bundle

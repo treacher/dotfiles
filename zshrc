@@ -10,6 +10,10 @@ antigen use oh-my-zsh
 # Bundles
 antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle autojump
+antigen bundle bundler
+antigen bundle docker
+antigen bundle web-search
 
 # Theme
 antigen theme robbyrussell
