@@ -1,5 +1,6 @@
 # Exports
 export EDITOR=vim
+export GOPATH=~/go
 
 # Antigen
 source $HOME/.dotfiles/antigen/antigen.zsh
