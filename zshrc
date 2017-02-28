@@ -1,6 +1,7 @@
 # Exports
 export EDITOR=vim
 export GOPATH=~/go
+export PATH=$PATH:$(go env GOPATH)/bin
 
 # Antigen
 source $HOME/.dotfiles/antigen/antigen.zsh
