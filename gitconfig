@@ -7,3 +7,5 @@
   excludesfile = /Users/treach3r/.gitignore
 [push]
   default = simple
+[merge]
+  tool = opendiff
