@@ -13,7 +13,7 @@ rm -rf ~/.gitignore
 rm -rf ~/.zshrc
 
 echo "Removing Golang directories"
-rm -rf ~/go/src ~/go/bin ~/go/pkg
+rm -rf ~/go/src ~/go/bin ~/go/pkg ~/dev
 
 echo "Unstalling oh-my-zsh"
 ! type uninstall_oh_my_zsh 2>/dev/null || uninstall_oh_my_zsh

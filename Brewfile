@@ -2,6 +2,7 @@ brew 'autojump'
 brew 'git'
 brew 'go'
 brew 'kubectl'
+brew 'mas'
 brew 'vim'
 brew 'wget'
 
@@ -19,3 +20,5 @@ cask 'slack'
 cask 'spotify'
 cask 'sublime-text'
 cask 'virtualbox'
+
+mas "Divvy - Window Manager", id: 413857545

@@ -4,6 +4,9 @@ chsh -s /bin/zsh
 echo "Installing oh-my-zsh"
 source "./scripts/oh-my-zsh.sh"
 
+echo "Installing zsh syntax highlighting"
+git clone --depth 1 git@github.com:zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+
 echo "Installing homebrew"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -12,8 +15,8 @@ ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/gitignore ~/.gitignore
 ln -s ~/.dotfiles/zshrc ~/.zshrc
 
-echo "Setting up Golang directories"
-mkdir -p ~/go/src ~/go/bin ~/go/pkg
+echo "Setting up development directories"
+mkdir -p ~/go/src ~/go/bin ~/go/pkg ~/dev
 
 echo "Installing brew bundle"
 brew tap Homebrew/bundle
