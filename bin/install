@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+echo "Installing oh-my-zsh"
+source "./scripts/oh-my-zsh.sh"
+
+echo "Installing homebrew"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+echo "Symlinking dotfiles"
+ln -s ~/.dotfiles/gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/gitignore ~/.gitignore
+ln -s ~/.dotfiles/zshrc ~/.zshrc
+
+echo "Installing brew bundle"
+brew tap Homebrew/bundle
+brew bundle
+
+echo "Setting up Golang directories"
+mkdir -p ~/go/src ~/go/bin ~/go/pkg
+
+env zsh
