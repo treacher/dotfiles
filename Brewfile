@@ -4,6 +4,7 @@ brew 'go'
 brew 'kubectl'
 brew 'mas'
 brew 'vim'
+brew 'watch'
 brew 'wget'
 
 tap 'caskroom/cask'
