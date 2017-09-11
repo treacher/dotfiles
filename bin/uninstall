@@ -8,12 +8,10 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 sudo rm -rf /usr/local/*
 
 echo "Removing dotfile symlinks"
-rm -rf ~/.gitconfig
-rm -rf ~/.gitignore
-rm -rf ~/.zshrc
+rm -rf ~/{.gitconfig,.gitignore,.zshrc}
 
 echo "Removing Golang directories"
-rm -rf ~/go/src ~/go/bin ~/go/pkg ~/dev
+rm -rf ~/go/{bin,pkg,src}
 
 echo "Unstalling oh-my-zsh"
 ! type uninstall_oh_my_zsh 2>/dev/null || uninstall_oh_my_zsh

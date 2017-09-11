@@ -11,12 +11,12 @@ echo "Installing homebrew"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 echo "Symlinking dotfiles"
-ln -s ~/.dotfiles/gitconfig ~/.gitconfig
-ln -s ~/.dotfiles/gitignore ~/.gitignore
-ln -s ~/.dotfiles/zshrc ~/.zshrc
+ln -s -F ~/.dotfiles/gitconfig ~/.gitconfig
+ln -s -F ~/.dotfiles/gitignore ~/.gitignore
+ln -s -F ~/.dotfiles/zshrc ~/.zshrc
 
 echo "Setting up development directories"
-mkdir -p ~/go/src ~/go/bin ~/go/pkg ~/dev
+mkdir -p ~/go/{bin,pkg,src}
 
 echo "Installing brew bundle"
 brew tap Homebrew/bundle
