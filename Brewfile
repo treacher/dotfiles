@@ -12,7 +12,6 @@ tap 'caskroom/cask'
 
 cask_args appdir: '/Applications'
 
-cask 'alfred'
 cask 'docker'
 cask 'flycut'
 cask 'google-chrome'
