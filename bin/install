@@ -4,8 +4,6 @@ chsh -s /bin/zsh
 echo "Installing oh-my-zsh"
 source "./scripts/oh-my-zsh.sh"
 
-git config --global core.excludesfile ~/.gitignore
-
 echo "Installing zsh syntax highlighting"
 git clone --depth 1 git@github.com:zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
