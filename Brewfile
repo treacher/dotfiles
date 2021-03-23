@@ -4,7 +4,7 @@ brew 'mas'
 brew 'vim'
 brew 'watch'
 
-tap 'homebrew/caskk'
+tap 'homebrew/cask'
 
 cask_args appdir: '/Applications'
 
