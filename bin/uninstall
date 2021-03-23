@@ -4,14 +4,12 @@ echo "Uninstalling brew bundle"
 ! type brew 2>/dev/null || brew uninstall --force $(brew list)
 
 echo "Uninstalling homebrew"
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall.sh)"
 sudo rm -rf /usr/local/*
 
 echo "Removing dotfile symlinks"
 rm -rf ~/{.gitconfig,.gitignore,.zshrc}
 
-echo "Removing Golang directories"
-rm -rf ~/go/{bin,pkg,src}
 
 echo "Unstalling oh-my-zsh"
 ! type uninstall_oh_my_zsh 2>/dev/null || uninstall_oh_my_zsh
